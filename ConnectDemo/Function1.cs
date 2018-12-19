@@ -26,7 +26,7 @@ namespace ConnectDemo
             name = name ?? data?.name;
 
             return name != null
-                ? (ActionResult)new OkObjectResult($"Hello, {name}")
+                ? (ActionResult)new OkObjectResult($"Azure DevOps is super cool right, {name}")
                 : new BadRequestObjectResult("Please pass a name on the query string or in the request body");
         }
     }
